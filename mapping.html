@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="mappi.css">
+<h1 align="center">Memory Mapping</h1>
+<br>
+
+<form>
+    <label class="inp" for="fname">Enter the memory address (In decimal) : </label>
+    <input type="number" id="fname" name="fname" min="0">
+    <input type="button" value="ENTER" id="btn1" onclick="addRow2way('2way');addRowdirect('dire')"><br> 
+    <br><br>
+    <script>
+        var input = document.getElementById("fname");
+        input.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("btn1").click();
+            event.currentTarget.value = "";          }
+        });
+        </script>
+ </form>
+
+
+<h2>Direct Mapping</h2><br>
+<br>
+<table id="dire">
+    <tr id="temp">
+        <th >Value</th>
+        <th >Hit/Miss</th> 
+        <th >Set 0</th>
+        <th >Set 1</th>
+        <th >Set 2</th>
+        <th >Set 3</th>
+        <th >Set 4</th>
+        <th >Set 5</th>
+        <th >Set 6</th>
+        <th >Set 7</th>
+        <th >Miss Rate</th>
+        <th >Hit Rate</th>
+    </tr>
+</table><br>
+
+
+<h2>2-way Associative Mapping</h2><br>
+
+<table id="2way">
+    <tr id="temp1">
+        <th >Value</th>
+        <th >Hit/Miss</th>
+        <th colspan="2">Set 0</th>
+        <th colspan="2">Set 1</th>
+        <th colspan="2">Set 2</th>
+        <th colspan="2">Set 3</th> 
+        <th >Miss Rate</th>
+        <th >Hit Rate</th>
+</tr>
+</table><br>
+
+
+<br><br><br><br>
+<script src="mapd.js"></script>
+<script src="map2.js"></script>
+</body>
+</html>
