@@ -13,15 +13,19 @@ For direct mapping
 >12 into binary.     
 12<sub>10</sub>=01100   
 Deleting 00 as offset.   
-Taking 011 as index.   
-The address is mapped into block 011 in cache.   
+Taking 011 as index. 
+Converting 011 into decimal
+011<sub>2</sub>=3
+The address is mapped into block 3 in cache.   
 
 For 2-way set associative mapping      
 >12 into binary.     
-12<sub>10</sub>=1100   
+12<sub>10</sub>=01100   
 Deleting 00 as offset.   
-Taking 11 as index.   
-The address is mapped into block 11 in cache.   
+Taking 11 as index. 
+Converting 11 into decimal
+11<sub>2</sub>=3
+The address is mapped into block 3 in cache.   
 
 ### How to use
 Open the website (http://thaha-althaf.github.io/coa-memory-mapping-project)
